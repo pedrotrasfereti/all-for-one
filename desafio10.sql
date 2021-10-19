@@ -2,4 +2,5 @@
 
 SELECT * FROM northwind.purchase_orders
 WHERE created_by >= 3
-ORDER BY id, created_by DESC;
+-- A ordernação pelo created_by deve ocorrer antes de ordernar pelo id
+ORDER BY created_by DESC, id;
